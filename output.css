@@ -621,6 +621,11 @@ video {
   margin: 2rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
@@ -636,10 +641,6 @@ video {
 
 .ml-2 {
   margin-left: 0.5rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
 }
 
 .mr-2 {
@@ -734,10 +735,6 @@ video {
   flex: 1 0 40%;
 }
 
-.flex-\[3_2_30\%\] {
-  flex: 3 2 30%;
-}
-
 .flex-auto {
   flex: 1 1 auto;
 }
@@ -750,36 +747,12 @@ video {
   flex-grow: 1;
 }
 
-.grid-flow-col {
-  grid-auto-flow: column;
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-\[200px\2c _400px\] {
-  grid-template-columns: 200px 400px;
-}
-
-.grid-cols-\[200px_minmax\(900px\2c _2fr\)_100px\] {
-  grid-template-columns: 200px minmax(900px, 2fr) 100px;
-}
-
-.grid-cols-\[minmax\(300px\2c _\.2fr\)\] {
-  grid-template-columns: minmax(300px, .2fr);
-}
-
 .flex-row {
   flex-direction: row;
 }
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .flex-nowrap {
@@ -1056,20 +1029,12 @@ video {
   padding-left: 3.5rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
 .pl-8 {
   padding-left: 2rem;
 }
 
 .pr-10 {
   padding-right: 2.5rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
 }
 
 .pt-0 {
@@ -1389,13 +1354,33 @@ video {
   color: rgb(20 83 45 / var(--tw-text-opacity));
 }
 
+@media not all and (min-width: 640px) {
+  .max-sm\:justify-center {
+    justify-content: center;
+  }
+
+  .max-sm\:text-center {
+    text-align: center;
+  }
+
+  .max-sm\:align-middle {
+    vertical-align: middle;
+  }
+
+  .max-sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .max-sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:flex-\[100\%\] {
     flex: 100%;
-  }
-
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:grid-cols-\[1fr\] {
@@ -1404,11 +1389,7 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:grid-cols-\[1fr\] {
-    grid-template-columns: 1fr;
-  }
-
-  .md\:grid-cols-\[400px\] {
-    grid-template-columns: 400px;
+  .md\:grid-cols-\[1fr_1fr_1fr\] {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
